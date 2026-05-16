@@ -1,6 +1,6 @@
 import TelegramBot from "node-telegram-bot-api";
 import { registerHandlers } from "./handlers.js";
-import { logger } from "./lib/logger.js";
+import { logger } from "../lib/logger.js";
 
 export function startBot(): TelegramBot {
   const token = process.env["TELEGRAM_BOT_TOKEN"];
